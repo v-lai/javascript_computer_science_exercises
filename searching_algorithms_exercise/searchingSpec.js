@@ -7,8 +7,8 @@ describe("#linearSearch", function(){
     expect(linearSearch([1,2,3,4,5,6,7],6)).to.equal(5)
   });
   it("should return -1 if the value is not found", function(){
-    expect(linearSearch([1,2,3,4]),0).to.equal(-1)
-    expect(linearSearch([1,2]),11).to.equal(-1)
+    expect(linearSearch([1,2,3,4],0)).to.equal(-1)
+    expect(linearSearch([1,2],11)).to.equal(-1)
   });
 });
 
@@ -19,8 +19,8 @@ describe("#linearSearchRecursive", function(){
     expect(linearSearchRecursive([1,2,3,4,5,6,7],6)).to.equal(5)
   });
   it("should return -1 if the value is not found", function(){
-    expect(linearSearchRecursive([1,2,3,4]),0).to.equal(-1)
-    expect(linearSearchRecursive([1,2]),11).to.equal(-1)
+    expect(linearSearchRecursive([1,2,3,4],0)).to.equal(-1)
+    expect(linearSearchRecursive([1,2],11)).to.equal(-1)
   });
 });
 
@@ -31,8 +31,8 @@ describe("#binarySearch", function(){
     expect(binarySearch([1,2,3,4,5,6,7],6)).to.equal(5)
   });
   it("should return -1 if the value is not found", function(){
-    expect(binarySearch([1,2,3,4]),0).to.equal(-1)
-    expect(binarySearch([1,2]),11).to.equal(-1)
+    expect(binarySearch([1,2,3,4],0)).to.equal(-1)
+    expect(binarySearch([1,2],11)).to.equal(-1)
   });
 });
 
@@ -43,7 +43,7 @@ describe("#binarySearchRecursive", function(){
     expect(binarySearchRecursive([1,2,3,4,5,6,7],6)).to.equal(5)
   });
   it("should return -1 if the value is not found", function(){
-    expect(binarySearchRecursive([1,2,3,4]),0).to.equal(-1)
-    expect(binarySearchRecursive([1,2]),11).to.equal(-1)
+    expect(binarySearchRecursive([1,2,3,4],0)).to.equal(-1)
+    expect(binarySearchRecursive([1,2],11)).to.equal(-1)
   });
 });
